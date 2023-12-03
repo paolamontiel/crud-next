@@ -1,5 +1,14 @@
-import '@/styles/globals.css'
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <footer className="footer">
+        2023. Crud con Next. Actividad Integradora 3
+      </footer>
+    </>
+  );
 }
+
+export default MyApp;
